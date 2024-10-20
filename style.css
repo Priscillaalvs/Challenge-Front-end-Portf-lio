@@ -1,0 +1,148 @@
+:root {
+    --cor-de-fundo: #F2EFDF;
+    --cor-de-fundo-menu: #3B4013;
+    --cor-do-link: #000000;
+    --cor-do-botao: #23260F;
+    --cor-do-botao-hover: #3B4013;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 100px;
+}
+
+.cabecalho__titulo {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.navegacao__lista {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.navegacao__elemento a {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Seções principais */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #fff; /* Fundo branco para seções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao__foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.redes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.habilidades__lista,
+.hobbies__lista,
+.formacao__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.habilidades__titulo,
+.hobbies__titulo,
+.formacao__titulo {
+    margin-bottom: 10px;
+}
+
+.projetos__conteiner {
+    margin-bottom: 20px;
+}
+
+.projetos__imagem {
+    width: 50%; /* Imagem responsiva */
+    height: 50%;
+    display: column;
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato__campo {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo do botão */
+.contato__botao {
+    background-color: var(--cor-do-botao);
+    color: #F2EFDF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato__botao:hover {
+    background-color: var(--cor-do-botao-hover);
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__titulo {
+        font-size: 2.5rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.2rem;
+    }
+}
